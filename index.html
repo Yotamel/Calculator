@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+</head>
+<body onload="init()">
+    <table border="4" class = "basicTable">
+        <tr>
+            <td rowspan = "2" colspan="5" class = "display">this is a test</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><button onclick="memoryClear()" class = 'block'>MC</button></td>
+            <td><button onclick="memoryRecall()" class = 'block'>MR</button></td>
+            <td><button onclick="memoryStore()" class = 'block'>MS</button></td>
+            <td><button onclick="memoryCal('+')" class = 'block'>M+</button></td>
+            <td><button onclick="memoryCal('-')" class = 'block'>M-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="getNum(7)" class = 'block'>7</button></td>
+            <td><button onclick="getNum(8)" class = 'block'>8</button></td>
+            <td><button onclick="getNum(9)" class = 'block'>9</button></td>
+            <td><button onclick="clearCal()" class = 'block'>C</button></td>
+            <td><button onclick="clearEntry()" class = 'block'>CE</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="getNum(4)" class = 'block'>4</button></td>
+            <td><button onclick="getNum(5)" class = 'block'>5</button></td>
+            <td><button onclick="getNum(6)" class = 'block'>6</button></td>
+            <td><button onclick="getOp('+')" class = 'block'>+</button></td>
+            <td><button onclick="getOp('*')" class = 'block'>*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="getNum(1)" class = 'block'>1</button></td>
+            <td><button onclick="getNum(2)" class = 'block'>2</button></td>
+            <td><button onclick="getNum(3)" class = 'block'>3</button></td>
+            <td><button onclick="getOp('-')" class = 'block'>-</button></td>
+            <td><button onclick="getOp('/')" class = 'block'>/</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button onclick="getNum(0)" class = 'block'>0</button></td>
+            <td><button onclick="getNum('.')" class = 'block'>.</button></td>
+            <td><button onclick="getOp('=')" class = 'block'>=</button></td>
+            <td><button onclick="getOp('%')" class = 'block'>%</button></td>
+        </tr>
+    </table>
+    <table border="4" class = "basicTable">
+        <th>Memory</th>
+    </table>
+    <script src="js/main.js"></script>
+</body>
+</html>

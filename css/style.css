@@ -1,0 +1,35 @@
+body{
+    background-color: #25312a;
+}
+
+
+.basicTable{
+    border: 3;
+    height: 50px;
+    background-color: #076d46;
+}
+
+
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #04AA6D;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+.block:hover{
+    background-color: #c73f78;
+}
+
+.block:active{
+    background-color: #88244e;
+}
+
+
+.display{
+    background-color: #a9f3dd;
+}
